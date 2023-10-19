@@ -11,17 +11,22 @@
             font-family: poppins;
         }
         .main{
+            display: flex;
+            flex-direction: column;
             border-left : 2px solid black ;
             background-color: aqua;
+            padding: 0.9em;
         }
         .sidebar{
             background-color: burlywood;
             display: flex;
             flex-direction: column;
+            padding: 0.9em;
         }
         .container{
             display: flex;
             display: row;
+            gap: 30px;
         }
         a {
             text-decoration: none;
@@ -35,31 +40,48 @@
             padding: 0.5 px;
             background-color: gray;
         }
+        h4{
+            margin: 0;
+        }
+        .detail{
+            margin: 0;
+        }
+
+        hr{
+            margin-top: 0;
+        }
+        .b-sd{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
             <div class="profile">
-                <img src="pop.jpg" alt="">
+                <img src="pop.jpg" alt="" style="border-radius: 150px;">
             </div>
             <div class="names"><h4>Seyedi and Najafzadeh</h4></div>
             <div class="detail"><h6>Lorem ipsum dolor sit, amet consectetur</h6></div>
-
+            <hr color="black" width="170">
             <!-- line -->
-
-            <div class="contact">
-                <span class="title">Contact us</span>
-                <div class="links">
-                    <a href="mailto:gray.orc.80@gmail.com">gray.orc.80@gmail.com</a>
+            <div class="b-sd">
+                <div class="contact">
+                    <span class="title">Contact us</span>
+                    <div class="links">
+                        <a href="mailto:gray.orc.80@gmail.com">gray.orc.80@gmail.com</a>
+                    </div>
                 </div>
-            </div>
-            <div class="personal-profile">
-                <div class="links"></div>
-            </div>
+                <div class="personal-profile">
+                    <span class="title">Personal Profile</span>
+                    <div class="links"></div>
+                </div>
 
-            <div class="skills">
-                <div class="links"></div>
+                <div class="skills">
+                    <div class="links"></div>
+                </div>
             </div>
         </div>
         <div class="main">
