@@ -6,38 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        * {
+            font-family: poppins;
+        }
         .main{
-            border-left : 0px solid black ;
+            border-left : 2px solid black ;
+            background-color: aqua;
+        }
+        .sidebar{
+            background-color: burlywood;
+            display: flex;
+            flex-direction: column;
+        }
+        .container{
+            display: flex;
+            display: row;
+        }
+        a {
+            text-decoration: none;
+        }
+        span.title{
+        }
+        .links a{
+            font-size: 0.7em;
+        }
+        .m-title{
+            padding: 0.5 px;
+            background-color: gray;
         }
     </style>
 </head>
 <body>
-    <div class="sidebar">
-        <div class="profile">
-            <img src="pop.jpg" alt="">
-        </div>
-        <div class="names"></div>
-        <div class="detail"></div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="pop.jpg" alt="">
+            </div>
+            <div class="names"><h4>Seyedi and Najafzadeh</h4></div>
+            <div class="detail"><h6>Lorem ipsum dolor sit, amet consectetur</h6></div>
 
-        <!-- line -->
+            <!-- line -->
 
-        <div class="contact">
-            <div class="links"></div>
-        </div>
-        <div class="personal-profile">
-            <div class="links"></div>
-        </div>
+            <div class="contact">
+                <span class="title">Contact us</span>
+                <div class="links">
+                    <a href="mailto:gray.orc.80@gmail.com">gray.orc.80@gmail.com</a>
+                </div>
+            </div>
+            <div class="personal-profile">
+                <div class="links"></div>
+            </div>
 
-        <div class="skills">
-            <div class="links"></div>
+            <div class="skills">
+                <div class="links"></div>
+            </div>
         </div>
-    </div>
-    <div class="main">
-        <div class="education">
-        <div class="title"></div>
-        </div>
-        <div class="work-experience">
-            <div class="title"></div>
+        <div class="main">
+            <div class="education">
+            <div class="title"><span class="m-title">Education</span></div>
+            </div>
+            <div class="work-experience">
+                <div class="title"></div>
+            </div>
         </div>
     </div>
 </body>
